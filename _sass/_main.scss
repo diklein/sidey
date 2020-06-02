@@ -43,8 +43,17 @@ pre {
 	margin-top: 0;
 }
 
+.post > p {
+	display: grid;
+	grid-template-columns: minmax(0,36rem) 1fr;
+}
+
+.post p > img {
+	grid-column:span 2;
+}
+
 img {
-	
+	max-width: 100%;
 }
 
 .meta {
@@ -68,14 +77,10 @@ pre {
 	overflow-x: auto;
 }
 
-img {
-	max-width:100%;
-}
-
 hr {
 	background: #000;
-    height: 1px;
-    border: 0;
+  height: 1px;
+  border: 0;
 }
 
 header {
@@ -169,14 +174,13 @@ strong, b {
 main {
 	display:flex;
 	flex-wrap:wrap;
-	max-width:80rem;
-	margin:2rem auto;
-	padding:1rem;
+	max-width:88rem;
+	margin:4rem auto;
 }
 
 
 section {
-	padding-left: 10em !important;
+	padding-left: 12em !important;
 	flex-basis:0;
 	flex-grow:999;
 	min-width:70%;
