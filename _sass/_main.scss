@@ -16,7 +16,7 @@ body {
 }
 
 nav ul {
-    border-right: 1px solid #edf2f7;
+    // border-right: 1px solid #edf2f7;
 }
 
 a {
@@ -32,6 +32,7 @@ pre {
 
 .post p {
 	margin: .5rem 0;
+	max-width: 40em;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
@@ -40,6 +41,10 @@ pre {
 
 .post h2:first-child, .project h2:first-child, .photo h2:first-child {
 	margin-top: 0;
+}
+
+.post img {
+	max-width: 64em !important;
 }
 
 .meta {
@@ -86,7 +91,7 @@ header a {
 header li {
 	margin-bottom: .2rem;
 	text-align: right;
-	margin-right: 2rem;
+
 }
 
 header a.active {
@@ -164,7 +169,7 @@ strong, b {
 main {
 	display:flex;
 	flex-wrap:wrap;
-	max-width:60rem;
+	max-width:80rem;
 	margin:2rem auto;
 	padding:1rem;
 }
@@ -193,6 +198,7 @@ nav ul {
 }
 
 section {
+	padding-left: 10em !important;
 	flex-basis:0;
 	flex-grow:999;
 	min-width:70%;
