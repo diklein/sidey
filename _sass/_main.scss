@@ -175,28 +175,6 @@ main {
 }
 
 
-@media screen and (max-width: 45rem ) {
-header li {
-    display: inline;
-	margin-right: 1rem;
-}
-.logo {
-	padding-bottom: 1rem;
-}
-header ul {
-	border-bottom: 1px solid #edf2f7;
-	padding-bottom: 2rem;
-}
-nav ul {
-    border-right: 0px;
-}
-
-.photos ul {
-	margin-top: 0.5rem;
-}
-
-}
-
 section {
 	padding-left: 10em !important;
 	flex-basis:0;
@@ -209,4 +187,27 @@ section {
 
 figcaption {
     font-size: smaller;
+}
+
+@media screen and (max-width: 45rem ) {
+	header li {
+	    display: inline;
+		margin-right: 1rem;
+	}
+	.logo {
+		padding-bottom: 1rem;
+	}
+	header ul {
+		// border-bottom: 1px solid #edf2f7;
+		padding-bottom: 1rem;
+	}
+	nav ul {
+	    border-right: 0px;
+	}
+	.photos ul {
+		margin-top: 0.5rem;
+	}
+	section {
+		padding-left: 1em !important;
+	}
 }
